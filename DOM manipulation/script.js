@@ -1,10 +1,25 @@
-const heading = document.getElementById("myHeading");
-const button = document.getElementById("actionBtn");
+let count = 0;
 
-button.addEventListener("click", function () {
-  heading.innerText = "You clicked the button";
-  heading.style.color = "#0056b3";
-  heading.style.backgroundColor = "#e7f3ff";
-  heading.style.padding = "10px";
-  heading.style.borderRadius = "5px";
+let countDisplay = document.getElementById("count");
+
+let increment = document.getElementById("increment");
+let decrement = document.getElementById("decrement");
+let reset = document.getElementById("reset");
+
+// Increment
+increment.addEventListener("click", function () {
+  count++;
+  countDisplay.innerText = count;
+});
+
+// Decrement
+decrement.addEventListener("click", function () {
+  count--;
+  countDisplay.innerText = count;
+});
+
+// Reset
+reset.addEventListener("click", function () {
+  count = 0;
+  countDisplay.innerText = count;
 });
