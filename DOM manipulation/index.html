@@ -1,18 +1,26 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
-    <title>Counter App</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Application</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="counter-container">
-      <h1>Counter App</h1>
+    <div class="quiz-container">
+      <h1>JavaScript Quiz</h1>
 
-      <h2 id="count">0</h2>
+      <div id="quiz-box">
+        <h2 id="question">Welcome to the Quiz!</h2>
 
-      <button id="decrement">-</button>
-      <button id="reset">Reset</button>
-      <button id="increment">+</button>
+        <div id="answer-buttons">
+          <!-- Options will be added using JavaScript -->
+        </div>
+
+        <button id="next-btn">Start Quiz</button>
+      </div>
+
+      <p id="result"></p>
     </div>
 
     <script src="script.js"></script>
